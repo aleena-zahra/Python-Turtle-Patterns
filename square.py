@@ -1,5 +1,5 @@
 import turtle
-
+#code to draw a square using a loop
 speed=100
 angle=90
 thing = turtle.Turtle()
