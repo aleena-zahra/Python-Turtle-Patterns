@@ -1,5 +1,5 @@
 import turtle
-
+#code for moving circle
 speed=5
 thing = turtle.Turtle()
 for i in range (5):
