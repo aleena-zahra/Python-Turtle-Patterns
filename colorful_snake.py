@@ -1,6 +1,7 @@
 import turtle
 from turtle import Screen
 import random
+
 screen = Screen()
 speed=10
 
@@ -9,6 +10,8 @@ snake = turtle.Turtle()
 snake.width(width=5)
 snake.hideturtle()
 snake.color(random.choice(colors))
+#functions that define movement in 4 directions
+#color changes each time snake moves
 def go_up():
     global snake
     snake.color(random.choice(colors))
@@ -31,7 +34,7 @@ def go_left():
     x=snake.xcor()
     snake.setx(x-speed) 
 
-
+#functions to respond to user pressing arrow keys
 screen.listen()
 screen.onkeypress(go_up,"Up")
 screen.onkeypress(go_down,"Down")
